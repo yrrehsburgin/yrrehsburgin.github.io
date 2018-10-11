@@ -1,0 +1,125 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+
+.container {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    margin: auto;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    grid-template-rows: 200px 100%;
+    grid-template-columns: 1fr 2fr 4fr 1fr;
+    height:auto;
+    width: auto;
+    background-color: antiquewhite;
+    
+  }
+
+  header {
+    background-color:grey ;
+    grid-column: 1/span 4;
+    grid-row: 1/span ;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+
+  .Sidebar{
+    padding: 8px;
+    text-align: left;
+    background-color: lightslategray;
+    grid-area: 2/1/6/2;
+  }
+
+.image{
+    width:20px; 
+    height:10px;
+  }
+
+ .Sidebar img{
+     border-radius: 100px;
+     align-self: center;
+     margin: 25px;
+ }
+
+  .Contact{
+      margin-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      border-bottom: 1.5px solid black;
+  }
+
+  
+
+  .PersonalInfo{
+      display: flex;
+      flex-direction: column;
+      grid-row: 2/span 1;
+      grid-column: 2/span 1;
+      margin-left: 20px;
+      padding-left: 30px;
+  }
+.PersonalInfo div{
+    padding-bottom: 15px;
+}
+
+.PersonalInfo h2{
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top:10px;
+}
+
+.PersonalInfo p{
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+
+.PersonalInfo Work{
+    display: flex;
+    flex-direction: column;
+}
+
+.air{
+    display: flex;
+    flex-direction: row;
+}
+
+.air .right{
+    justify-content: flex-end;
+    width: 500px;
+}
+
+.air .left{
+    width: 350px;
+}
+
+.Skill{
+    display: float;
+    line-height: 25px;
+}
+
+.Skill .left{
+    float:left;
+    list-style-type: circle;
+    width: 100px;
+}
+
+.Skill .right{
+    float: right;
+    list-style-type: circle;
+    width: 100px;
+}
+
+.info{
+    width:400px;
+    border: 3px solid #D4F7EC;
+  }
